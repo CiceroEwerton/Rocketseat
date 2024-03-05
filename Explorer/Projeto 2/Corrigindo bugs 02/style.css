@@ -1,8 +1,10 @@
 body{
+  margin: 0;
   background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh;
 }
 nav {
-margin-top: 65px;
+margin: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -35,7 +37,8 @@ ul li a:hover {
 
 .page{
   width: 1008px;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 65px;
 }
 
 main{
@@ -96,7 +99,6 @@ footer{
   font-weight: 400;
   line-height: 28px; /* 200% */ 
   margin-top: 82px;
-  margin-bottom: 20px;
 }
 #balls{
   position: fixed;
