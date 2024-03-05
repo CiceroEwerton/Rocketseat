@@ -1,19 +1,114 @@
 body{
     margin: 0;
-    
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;
 }
 .page {
     width: 1000px;
-    margin: 65px auto 0;
+    margin: 0 auto;
+    padding-top: 65px;
 
  }
-header{
+nav{
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    font-family: "Mulish", sans-serif;
 }
 nav ul {
     list-style: none;
     display: flex;
     gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Mulish", sans-serif;
+    color: #000;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px; /* 114.286% */
+}
+ul li a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+ul li a{
+    text-decoration: none;
+    color: var(--1f1534-hyfen, #1F1534);
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0.5;
+}
+h1 span{
+    color: #89C5CC;
+    font-family: Mulish;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; 
+}
+.text{
+    color: #7D7987;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 200% */
+}
+
+button{
+    font-family: "Open Sans";
+    border-radius: 4px;
+    background: var(--Primary-color, #69B99D);
+    display: inline-flex;
+    height: 56px;
+    padding: 14px 32px 15px 32px;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #fff;
+    border: 0;
+    margin-top: 40px;
+
+   
+}
+footer{
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+footer a{
+    color: #69B99D;
+    
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#balls{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 98.394px;
+    height: 88.001px;
+    opacity: 0.3;
+}
+button:hover{
+    background: #358065;
 }
