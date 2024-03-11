@@ -36,8 +36,40 @@
                 <input type="number" id="event-whats"/>
                 <label for="event-info">Informações  extras</label>
                 <textarea name="event-info" id="event-info" cols="30" rows="10"></textarea>
+                <label for="event-categoria">Categoria <span>(somente números)</span></label>
+                <select name="categoria" id="event-categoria">
+                  <option value="live">Ao vivo</option>
+                  <option value="live">Ao vivo</option>
+                  <option value="live">Ao vivo</option>
+                  <option value="live">Ao vivo</option>
+                </select>
             </div>
         </fieldset>
+        <fieldset>
+          
+          <div class="input-wrapper">
+          <legend class="legend">Privacidade</legend>
+          <label for="event-email">E-mail do administrador<span>(digite um email válido)</span></label>
+                <input type="email" id="event-email"/>
+                <label for="event-senha">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
+                <input type="password" id="event-senha"/>
+          
+          </div>
+          </fieldset>
+          <fieldset>
+          
+            <div class="input-wrapper">
+            <legend class="legen">Dia e hora</legend>
+            <div class="colunas">
+              <label for="event-date">Data</label>
+              <input type="date" id="event-date"/>
+              <label for="event-inicio">Das</label>
+              <input type="time" id="event-inicio"/>
+              <label for="event-final">Até</label>
+              <input type="time" id="event-final"/>
+            </div>
+            </div>
+            </fieldset>
       </form>
     </div>
   </body>
