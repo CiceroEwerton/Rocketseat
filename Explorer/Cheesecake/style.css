@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  font-family: "Source Serif Pro";
+}
+body {
+  color: #a54328;
+  background: url(img/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
+}
+main {
+  padding: 56px 40px;
+  width: 319px;
+  margin-inline: auto;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+h2 {
+  margin-bottom: 32px;
+}
+main img {
+  width: 100%;
+  margin-block: 46px;
+}
+button {
+  font-family: "Source Serif 4";
+  display: flex;
+  width: 94.24px;
+  height: 31.886px;
+  padding: 11.337px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.086px;
+  border-radius: 5.669px;
+  background: #a54328;
+  color: #fff;
+  font-size: 9.92px;
+  border: 0;
+  margin-top: 32px;
+}
+h1,
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+p,
+li,
+strong {
+  font-size: 17px;
+  line-height: 23px;
+}
+ol,
+ul {
+  padding-left: 32px;
+}
+ul {
+  margin-bottom: 24px;
+}
+button:hover {
+  background: #7a321e;
+}
+@media (min-width: 1120px) {
+  main {
+    flex-direction: row;
+    width: fit-content;
+    gap: 189px;
+    padding: 100px;
+  }
+  .box1 {
+    max-width: 435px;
+  }
+  .box2 {
+    max-width: 520px;
+  }
+  h1,
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  p,
+  li,
+  strong {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  button {
+    width: 133px;
+    height: 45px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
