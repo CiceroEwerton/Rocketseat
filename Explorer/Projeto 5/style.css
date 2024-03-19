@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Mulish;
+}
+
+body {
+  background: var(--Platform-Aliases-Background, #121214);
+  padding: 72px 104px;
+  display: grid;
+  justify-content: center;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 48px 60px;
+  place-content: center;
+}
+
+.card {
+  border-radius: 8px;
+  border: 2px solid var(--Platform-Aliases-Shape-terciria, #323238);
+  background: var(--Platform-Aliases-Shape-principal, #202024);
+  overflow: hidden;
+}
+.card p {
+  color: var(--Platform-Aliases-Texto-base, #c4c4cc);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Mulish;
+  font-size: 19.381px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 24px 32px 32px;
+}
+.card h2 {
+  color: var(--Platform-Aliases-Ttulos, #e1e1e6);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Mulish;
+  font-size: 35.302px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding: 24px 32px 0px;
+}
+h1 {
+  color: var(--Brand-Colors-Explorer-mid, #02799d);
+  font-family: Mulish;
+  font-size: 58.287px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+header p {
+  color: var(--Platform-Aliases-Ttulos, #e1e1e6);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 62px;
+}
