@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+    font-size: 62.5%;
+    --cor-base-branco: #fff;
+    --cor-base-cinza-100: #f5f5f5;
+    --cor-base-cinza-300: #8d8d99;
+    --cor-base-cinza-500: #3d3d3d;
+    --cor-base-cinza-900: #202024;
+    
+}
+html, body, input{
+  font-family: 'Mulish', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    color: var(--cor-base-cinza-900);
+}
+
+#app > *{
+ 
+}
+
+#app {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: max-content 1fr max-content;
+}
+.container{
+ padding: 1.6rem 3.2rem;
+ width: min(112rem, 100%);
+ margin: 0 auto;
+}
+main{
+  overflow-y:scroll;
+  background-color: var(--cor-base-cinza-100);
+}
+header, nav, nav ul{
+  display: flex;
+  align-items: center;
+  gap: 7.2rem;
+  font-weight: 700;
+}
+header form{
+  flex:1;
+}
+.input-wrapper input{
+  width: 100%;
+  padding: 1.6rem;
+  background-color: var(--cor-base-cinza-100);
+  border: 0;
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: 0.56;
+
+}
+.input-wrapper input::placeholder{
+  color: var(--cor-base-cinza-500);
+}
+nav ul{
+  list-style: none;
+  font-size: 1.8rem;
+  color: var(--cor-base-cinza-300);
+
+}
+ul li.active{
+  color: var(--cor-base-cinza-900);
+
+}
+.avatar{
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+footer{
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+}
+
+/*galeria*/
+main h1 {
+  padding-top: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.galeria {
+  margin-top: 3.2rem;
+  display: grid;
+  gap: 2.2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item{
+  background-color: var(--cor-base-branco);
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.detalhes{
+  padding: 2.2rem;
+  background-color: var(--cor-base-branco);
+  z-index: 1;
+  position: relative;
+}
+.detalhes h2{
+  font-size: 1.8rem;
+}
+.tags{
+  margin-top: 1.2rem;
+}
+.tags span{
+  padding: .6rem;
+  background-color: var(--cor-base-cinza-100);
+  border-radius: .4rem;
+  line-height: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.item img:hover{
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1) rotate(-2deg);
+}
