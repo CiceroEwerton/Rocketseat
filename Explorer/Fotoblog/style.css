@@ -109,6 +109,7 @@ main h1 {
   object-fit: cover;
   transition-property: all;
   transition-duration: 0.5s;
+  display: block;
 }
 .detalhes {
   padding: 2.2rem;
@@ -133,4 +134,33 @@ main h1 {
 .item img:hover {
   filter: hue-rotate(7deg) contrast(101%) saturate(200%);
   transform: scale(1.1) rotate(-2deg);
+}
+
+header{
+  --starty: -100%;
+  animation: move .3s;
+}
+
+footer{
+  --starty: 100%;
+  animation: move .3s;
+}
+
+.item{
+  --dalay: .4s;
+  animation: aparecer .4s var(--dalay) backwards;
+}
+
+
+@keyframes move{
+  from{
+    transform: translateY(var(--starty));
+  }
+}
+
+@keyframes aparecer{
+  0%{
+    opacity: 0;
+    transform: scale(0.7);
+  }
 }
