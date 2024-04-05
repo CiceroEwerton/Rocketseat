@@ -153,34 +153,89 @@
 // }
 
   
-let numero1, numero2, iguais, ParInpa;
+// let numero1, numero2, iguais, ParInpa;
 
-numero1 = Number(prompt("Digite o primeiro numero:"))
-numero2 = Number(prompt("Digite o segundo numero:"))
+// numero1 = Number(prompt("Digite o primeiro numero:"))
+// numero2 = Number(prompt("Digite o segundo numero:"))
 
-ParInpa = (numero1 + numero2);
+// ParInpa = (numero1 + numero2);
 
 
 
-if ( ParInpa & 1){
- ParInpa = "Inpar"
-  }
-  else{
-    ParInpa = "Par"
-     }
+// if ( ParInpa & 1){
+//  ParInpa = "Inpar"
+//   }
+//   else{
+//     ParInpa = "Par"
+//      }
 
-if (numero1 == numero2){
-iguais = "iguais"
+// if (numero1 == numero2){
+// iguais = "iguais"
+// }
+// else{
+//     iguais = "diferentes"
+// }
+
+
+// alert(`A soma dos dois números: ${numero1 + numero2}`)
+// alert(`A subtração dos dois números: ${numero1 - numero2}`)
+// alert(`A multiplicação dos dois números: ${numero1 * numero2}`)
+// alert(`A divisão dos dois números: ${numero1 / numero2}`)
+// alert(`O resto da divisão dos dois números: ${numero1 % numero2}`)
+// alert(`A soma dos dois números é ${ParInpa}: ${numero1 + numero2}`)
+// alert(`Os numeros inseridos são ${iguais}!`)
+
+let estudantes, media, mensagem, aluno
+
+estudantes = [
+{
+  nome: "João",
+  nota1: 10,
+  nota2: 6,
+},
+{
+  nome: "Maria",
+  nota1: 7,
+  nota2: 9,
+},
+{
+  nome: "Jessica",
+  nota1: 5,
+  nota2: 9,
+},
+{
+  nome: "Amanda",
+  nota1: 8,
+  nota2: 7,
+},
+{
+  nome: "Elias",
+  nota1: 9,
+  nota2: 7,
 }
-else{
-    iguais = "diferentes"
+]
+
+aluno = 0
+
+
+for(let estudante of estudantes){
+
+
+media = (estudantes[aluno].nota1 + estudantes[aluno].nota2) / 2
+
+if (media >= 7){
+mensagem = "Parabés, " + estudantes[aluno].nome + "! Voce foi aprovado(a) no concurso!"
+}
+else {
+mensagem = "Não foi dessa vez, " + estudantes[aluno].nome +"! Tente novamente!"
 }
 
 
-alert(`A soma dos dois números: ${numero1 + numero2}`)
-alert(`A subtração dos dois números: ${numero1 - numero2}`)
-alert(`A multiplicação dos dois números: ${numero1 * numero2}`)
-alert(`A divisão dos dois números: ${numero1 / numero2}`)
-alert(`O resto da divisão dos dois números: ${numero1 % numero2}`)
-alert(`A soma dos dois números é ${ParInpa}: ${numero1 + numero2}`)
-alert(`Os numeros inseridos são ${iguais}!`)
+alert(`
+A média do(a) aluno(a) ${estudantes[aluno].nome} é: ${media}
+${mensagem}
+`)
+
+aluno++
+
+}
