@@ -195,7 +195,7 @@ estudantes = [
 },
 {
   nome: "Maria",
-  nota1: 7,
+  nota1: 2,
   nota2: 9,
 },
 {
@@ -224,7 +224,7 @@ for(let estudante of estudantes){
 media = (estudantes[aluno].nota1 + estudantes[aluno].nota2) / 2
 
 if (media >= 7){
-mensagem = "Parabés, " + estudantes[aluno].nome + "! Voce foi aprovado(a) no concurso!"
+mensagem = "Parabéns, " + estudantes[aluno].nome + "! Voce foi aprovado(a) no concurso!"
 }
 else {
 mensagem = "Não foi dessa vez, " + estudantes[aluno].nome +"! Tente novamente!"
